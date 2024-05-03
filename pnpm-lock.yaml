@@ -51,10 +51,7 @@ packages:
 
   '@astrojs/compiler@2.7.1':
     resolution: {integrity: sha512-/POejAYuj8WEw7ZI0J8JBvevjfp9jQ9Wmu/Bg52RiNwGXkMV7JnYpsenVfHvvf1G7R5sXHGKlTcxlQWhoUTiGQ==}
-
-  '@astrojs/db@0.11.0':
-    resolution: {integrity: sha512-UK+XFmmLr3Fz4UJTy69QE5thxn8SK2y9eYZc28PRHwRggT91SIOzcQBMV+H2XthCnPphi9ifz0KF0yZcwCklhA==}
-
+  
   '@astrojs/internal-helpers@0.2.1':
     resolution: {integrity: sha512-06DD2ZnItMwUnH81LBLco3tWjcZ1lGU9rLCCBaeUCGYe9cI0wKyY2W3kDyoW1I6GmcWgt1fu+D1CTvz+FIKf8A==}
 
