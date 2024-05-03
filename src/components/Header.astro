@@ -1,0 +1,78 @@
+---
+import { Counter } from "./Counter"
+import HeaderButtom from "./HeaderButtom.astro"
+---
+
+<header transition:persist class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6 ">
+  <div class="mx-auto text-center mb-8 lg:mb-16">
+    <h2 class="mb-4 text-5xl tracking-tinght font-extrabold text-white">
+      Lanzamientos SpaceX 
+    </h2>
+    <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+      Todos la informacion relevante
+    </p>
+  </div>
+
+  <Counter client:visible/>
+
+  <nav
+    class="flex flex-col items-center justify-between w-full text-center md:flex-row"
+  >
+    <HeaderButtom class="text-white" href="/">
+      <svg
+        slot="after"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-info-hexagon"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z"
+        ></path><path d="M12 9h.01"></path><path d="M11 12h1v4h1"></path></svg
+      >
+      Home
+    </HeaderButtom>
+    <HeaderButtom class="text-white" href="/contacto">
+      <svg
+        slot="before"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-address-book"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"
+        ></path><path d="M10 16h6"></path><path
+          d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path><path d="M4 8h3"
+        ></path><path d="M4 12h3"></path><path d="M4 16h3"></path></svg
+      >
+      Contacto
+    </HeaderButtom>
+    <HeaderButtom class="text-white" href="/about">
+      <svg
+        slot="before"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+        ></path></svg
+      >
+      Sobre el proyecto
+    </HeaderButtom>
+  </nav>
+</header>
