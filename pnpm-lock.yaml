@@ -11,9 +11,6 @@ importers:
       '@astrojs/check':
         specifier: ^0.5.10
         version: 0.5.10(typescript@5.4.5)
-      '@astrojs/db':
-        specifier: ^0.11.0
-        version: 0.11.0
       '@astrojs/preact':
         specifier: ^3.2.0
         version: 3.2.0(@babel/core@7.24.4)(preact@10.20.2)(vite@5.2.9(@types/node@20.12.8))
